@@ -121,6 +121,16 @@ const properties = [
 },
 
 {
+    image: "images/house-for-rent-in-Kololo-11.jpeg",
+    title: "A bungalows house for rent in Kololo, Kampala",
+    category: "For Rent",
+    usage: "Residential",
+    type: "Bungalow",
+    location: "Kololo",
+    price: 5200000
+},
+
+{
     image: "images/landinbunga.jpeg",
     title: "12 Decimals Plot Of Land For Sale In Bunga Kawuku",
     category: "For Sale",
