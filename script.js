@@ -51,6 +51,16 @@ const properties = [
 },
 
 {
+    image: "images/Furnished-2-Bedrooms-Apartments-in-Kira-town-1.jpg",
+    title: "2 bedrooms furnished Apartments For Sale In Kira Town Kampala",
+    category: "For Sale",
+    usage: "Residential",
+    type: "Apartment",
+    location: "Kira",
+    price: 6500000
+},
+
+{
     image: "images/landbweya.webp",
     title: "Land for sale in Bweya, Entebbe",
     category: "For Sale",
