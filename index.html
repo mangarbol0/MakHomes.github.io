@@ -1,1 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakHomes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+    <!-- NAVBAR -->
+        <header class="navbar">
+            <div class="logo-area">
+                <img src="images/file_00000000f9f071fd8408cd7e91cb1268.png">
+                <div class="logo-text">
+                    <h2 class="navbarh2-text">
+                        <a href="index.html">MAKHOMES</a>
+                    </h2>
+                    <span>
+                        &bull; FIND &bull; BUY &bull; LIVE
+                    </span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="services.html">OUR SERVICES</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="inquiry.html">INQUIRY</a>
+            </nav>
+        </header>
+
+    <!-- HERO -->
+        <section class="hero">
+            <div>
+                <h1>
+                    Welcome to MakHomes Property
+                </h1>
+                <p>
+                    A modern e-commerce real estate platform that makes buying and renting properties simple and secure in Uganda
+                </p>
+            </div>
+
+            <div>
+                <img class="hero-image" src="images/Homepage-image.jpg">
+            </div>
+
+            <div>
+                <button class="explore-button">
+                    Explore Now
+                </button>
+
+                <button class="listyour-button">
+                    List Your Property
+                </button>
+            </div>
+        </section>
+
+    <!-- PROPERTY SECTION -->
+        <section class="featured">
+            <h2>Search for properties</h2>
+            
+    <!-- SEARCH FILTERS -->
+            <div class="search-box">
+
+        <!-- CATEGORY -->
+            <div class="filter">
+                <label>Category</label>
+
+                <select id="categoryFilter">
+                    <option value="All">Select</option>
+                    <option value="For Sale">For Sale</option>
+                    <option value="For Rent">For Rent</option>
+                </select>
+            </div>
+
+        <!-- USAGE -->
+            <div class="filter">
+                <label>Usage</label>
+
+                <select id="usageFilter">
+                    <option value="All">Select</option>
+                    <option value="Residential">Residential</option>
+                    <option value="Commercial">Commercial</option>
+                </select>
+            </div>
+
+        <!-- TYPE -->
+            <div class="filter">
+                <label>Property type</label>
+
+                <select id="typeFilter">
+                    <option value="All">All</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Villa">Villa</option>
+                    <option value="Bungalow">Bungalow</option>
+                    <option value="Office">Office</option>
+                    <option value="Land">Land</option>
+                    <option value="House">House</option>
+                </select>
+            </div>
+            
+        <!-- LOCATION -->
+            <div class="filter">
+                <label>Property location</label>
+
+                <select id="locationFilter">
+                    <option value="All">All</option>
+                    <option>Bunga</option>
+                    <option>Bwebajja</option>
+                    <option>Akright</option>
+                    <option>Kololo</option>
+                    <option>Kabalagala</option>
+                    <option>Kitooro</option>
+                    <option>Lubowa</option>
+                    <option>Kira</option>
+                    <option>Mengo</option>
+                </select>
+            </div>
+
+        <!-- PRICE -->
+            <div class="filter">
+                <label>Price range (Ugx)</label>
+
+                <select id="priceFilter">
+                    <option value="All">All</option>
+                    <option value="100000000">Below 100M</option>
+                    <option value="300000000">100M - 300M</option>
+                    <option value="500000000">300M - 500M</option>
+                    <option value="500000000">500M - 1B</option>
+                    <option value="1000000000">Above 1B</option>
+                </select>
+            </div>
+
+        <!-- BUTTON -->
+            <button class="search-btn" onclick="filterProperties()">
+                Search properties
+            </button>
+            </div><br><br>
+        <!-- PROPERTY CARDS -->
+        <div class="cards" id="propertyContainer"></div>
+        </section>
+
+    <!-- INQUIRY SECTION -->
+        <section class="inquiry-section">
+            <div class="inquiry-container"></div>
+            <div class="inquiry-text">
+                <h2>
+                    Property inquiry
+                </h2>
+                <p>
+                    Interested in a property? Send us your inquiry and our team
+                    will contact you shortly.
+                </p>
+            </div>
+        </section>
+
+    <!-- FORM -->
+        <form class="inquiry-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <select required>
+                <option>Select property type</option>
+                <option>For Sale</option>
+                <option>For Rent</option>
+            </select>
+
+            <textarea placeholder="Your Message"></textarea>
+
+            <button type="submit">
+                Submit inquiry
+            </button>
+        </form>
+
+    <!-- ABOUT -->
+        <section id="about" class="about-section">
+            <div class="about-text">
+                <h2>
+                    About MakHomes
+                </h2>
+                <p>
+                    MakHomes is a modern e-commerce real estate platform designed
+                    to simplify property discovery across Uganda. We help clients
+                    find residential and commercial properties through a smooth,
+                    secure, and user-friendly experience.
+                </p>
+                <p>
+                    Whether you are searching for a family home, apartment,
+                    office space, or investment property, MakHomes provides
+                    carefully listed opportunities tailored to your lifestyle.
+                </p>
+            </div>
+        </section>
+
+
+    <!-- SERVICES -->
+        <section id="services" class="services-section">
+            <h2>
+                Our services
+            </h2>
+
+            <div class="service-cards">
+                <div class="service">
+                    <h3>
+                        Property listings
+                    </h3>
+                    <p>
+                        Browse carefully selected residential and commercial
+                        properties across prime locations.
+                    </p>
+                </div>
+
+                <div class="service">
+                    <h3>
+                        Property search
+                    </h3>
+                    <p>
+                        Use smart filters to quickly discover properties that
+                        match your needs and budget.
+                    </p>
+                </div>
+
+                <div class="service">
+                    <h3>
+                        Client support
+                    </h3>
+                    <p>
+                        Our team is ready to assist clients professionally.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    <!-- CONTACT -->
+        <section id="contact" class="contact-section">
+            <h2 class="contact-text">
+                Contact MakHomes
+            </h2>
+            <p>
+                Email: support@makhomes.com
+            </p>
+            <p>
+                Telephone: +256 792 970871
+            </p>
+            <p>
+                Location: Bwebajja, Kampala
+            </p>
+        </section>        
+
+    <!-- FOOTER -->
+        <footer>
+            <p>
+                &bull; FIND &bull; BUY &bull; LIVE
+            </p>
+
+            <p>
+                MakHomes &#169; 2026
+            </p>
+        </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
