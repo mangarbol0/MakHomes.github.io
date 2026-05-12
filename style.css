@@ -307,12 +307,12 @@ body {
 .inquiry-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap:50px;
     align-items: center;
 }
 
 .inquiry-text h2 {
-    font-size: 40px;
+    font-size: 30px;
     color: white;
 }
 
