@@ -1,6 +1,16 @@
 const properties = [
 
 {
+    image: "images/Buzigahouse.jpeg",
+    title: "4 Bedrooms Mansion For Rent In Buziga With Servants Quarters Monthly",
+    category: "For Rent",
+    usage: "Residential",
+    type: "House",
+    location: "Buziga",
+    price: 4000000
+},
+
+{
     image: "images/Bunga-house-for-sale-4-850x570.jpeg",
     title: "5 Bedroom Mansion for Sale in Bunga Kampala",
     category: "For Sale",
@@ -8,6 +18,26 @@ const properties = [
     type: "House",
     location: "Bunga",
     price: 2190000000
+},
+
+{
+    image: "images/Akrighthouse.jpeg",
+    title: "5 Bedrooms House For Sale In Akright City Bwebajja Entebbe Road On 25 Decimals",
+    category: "For Sale",
+    usage: "Residential",
+    type: "House",
+    location: "Akright",
+    price: 2000000000
+},
+
+{
+    image: "images/Aquamarine-Heights-Condominiums-1.jpg",
+    title: "Aquarium Heights Apartment for Sale in Munyonyo Kampala",
+    category: "For Sale",
+    usage: "Residential",
+    type: "Apartment",
+    location: "Munyonyo",
+    price: 572000000
 },
 
 {
@@ -28,6 +58,16 @@ const properties = [
     type: "Apartment",
     location: "Akright",
     price: 6700000
+},
+
+{
+    image: "images/commercialinmuonyonyo.jpg",
+    title: "This commercial property for rent in Munyonyo Kampaala",
+    category: "For Rent",
+    usage: "Commercial",
+    type: "House",
+    location: "Munyonyo",
+    price: 55000000
 },
 
 {
@@ -131,7 +171,7 @@ const properties = [
 },
 
 {
-    image: "images/munyonyohouse.jpg",
+    image: "images/rentinmunyonyo.jpg",
     title: "5 Bedrooms House For Rent In Munyonyo On Quarter An Acre",
     category: "For Rent",
     usage: "Residential",
