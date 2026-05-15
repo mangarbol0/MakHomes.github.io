@@ -289,7 +289,7 @@ const properties = [
             `;
         });
     }
-
+    
 // FILTER FUNCTION
 function filterProperties() {
     const category = document.getElementById("categoryFilter").value;
@@ -314,10 +314,19 @@ function filterProperties() {
         );
 
     });
-
+    
     displayProperties(filtered);
-
 }
 
-// LOAD ALL PROPERTIES
+/* SHOW PROPERTIES WHEN BUTTON CLICKED */
+function showProperties() {
+
+const container = document.getElementById("propertyContainer");
+
+/* REMOVE HIDDEN CLASS */
+container.classList.remove("hidden");
+
+/* LOAD PROPERTIES */
 displayProperties(properties);
+
+}
